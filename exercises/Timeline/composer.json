@@ -1,0 +1,32 @@
+{
+  "name": "growflow/positions",
+  "description": "GrowFlow programmer's skill estimating task",
+  "license": "GPL",
+  "keywords": ["code exercise"],
+  "type": "project",
+  "require": {
+    "php": "^7.0.33",
+    "monolog/monolog": "^1.25",
+    "symfony/dotenv": "^3.4"
+  },
+  "require-dev": {
+    "phpbench/phpbench": "^0.14.0",
+    "phpmd/phpmd": "@stable",
+    "phpunit/phpunit": "^6.0",
+    "squizlabs/php_codesniffer": "^3.5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "GrowFlow\\": "src/"
+    }
+  },
+  "autoload-dev": {
+  },
+  "scripts": {
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

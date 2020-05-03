@@ -1,0 +1,35 @@
+[
+  [],
+  ["incorrect"],
+  { "position_id":  "non-numeric" },
+  {
+    "position_id": 1,
+    "order_date_from": "incorrect_date",
+    "delivery_date_from": "2019-incorrect_date-10",
+    "price": 200
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-01",
+    "delivery_date_from": "2019-03-01",
+    "price": 100
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-10",
+    "delivery_date_from": "2019-03-10",
+    "price": 200
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-20",
+    "delivery_date_from": "2019-02-25",
+    "price": 130
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-14",
+    "delivery_date_from": "2019-03-10",
+    "price": 400
+  }
+]

@@ -1,0 +1,16 @@
+version: "2.2"
+
+services:
+  gf.db:
+    build: ./docker/mysql
+    image: growflow/mysql
+    ports:
+      - 8306:3306
+    env_file: .env
+    volumes:
+      - ./docker/mysql/add_databases.sh:/docker-entrypoint-initdb.d/add_databases.sh
+
+  gf.app:
+    image: phpdockerio/php7-cli
+    volumes:
+      - ./:/var/www/app

@@ -1,0 +1,74 @@
+[
+  {
+    "position_id": 1,
+    "order_date_from": "2019-01-11",
+    "delivery_date_from": "2019-02-11",
+    "price": 1
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-01-12",
+    "delivery_date_from": "2019-02-12",
+    "price": 2
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-01-13",
+    "delivery_date_from": "2019-02-13",
+    "price": 3
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-01-14",
+    "delivery_date_from": "2019-02-14",
+    "price": 4
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-14",
+    "delivery_date_from": "2019-03-11",
+    "price": 11
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-13",
+    "delivery_date_from": "2019-03-12",
+    "price": 12
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-12",
+    "delivery_date_from": "2019-03-13",
+    "price": 13
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-02-11",
+    "delivery_date_from": "2019-03-14",
+    "price": 14
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-03-11",
+    "delivery_date_from": "2019-04-11",
+    "price": 21
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-03-11",
+    "delivery_date_from": "2019-04-12",
+    "price": 22
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-03-11",
+    "delivery_date_from": "2019-04-13",
+    "price": 23
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-03-11",
+    "delivery_date_from": "2019-04-14",
+    "price": 24
+  }
+]

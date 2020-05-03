@@ -1,0 +1,98 @@
+[
+  {
+    "position_id": 1,
+    "order_date_from": "2018-08-01",
+    "order_date_to": "",
+    "delivery_date_from": "2018-08-01",
+    "delivery_date_to": "2018-08-31",
+    "price": 300
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-08-01",
+    "order_date_to": "2018-08-31",
+    "delivery_date_from": "2018-09-01",
+    "delivery_date_to": "2018-12-24",
+    "price": 300
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-09-01",
+    "order_date_to": "",
+    "delivery_date_from": "2018-09-01",
+    "delivery_date_to": "2018-12-24",
+    "price": 140
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-09-01",
+    "order_date_to": "2018-12-24",
+    "delivery_date_from": "2018-12-25",
+    "delivery_date_to": "2019-04-30",
+    "price": 140
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-09-01",
+    "order_date_to": "",
+    "delivery_date_from": "2019-06-10",
+    "delivery_date_to": "2019-07-21",
+    "price": 170
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-09-01",
+    "order_date_to": "2019-04-30",
+    "delivery_date_from": "2019-07-22",
+    "delivery_date_to": "",
+    "price": 170
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-12-25",
+    "order_date_to": "",
+    "delivery_date_from": "2018-12-25",
+    "delivery_date_to": "2019-04-30",
+    "price": 315
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2018-12-25",
+    "order_date_to": "2019-04-30",
+    "delivery_date_from": "2019-05-01",
+    "delivery_date_to": "2019-05-05",
+    "price": 315
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-05-01",
+    "order_date_to": "",
+    "delivery_date_from": "2019-05-01",
+    "delivery_date_to": "2019-05-05",
+    "price": 315
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-05-01",
+    "order_date_to": "",
+    "delivery_date_from": "2019-05-06",
+    "delivery_date_to": "2019-06-01",
+    "price": 170
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-05-01",
+    "order_date_to": "",
+    "delivery_date_from": "2019-06-02",
+    "delivery_date_to": "2019-06-09",
+    "price": 170
+  },
+  {
+    "position_id": 1,
+    "order_date_from": "2019-05-01",
+    "order_date_to": "",
+    "delivery_date_from": "2019-07-22",
+    "delivery_date_to": "",
+    "price": 140
+  }
+]
