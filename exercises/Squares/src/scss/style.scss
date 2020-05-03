@@ -1,0 +1,26 @@
+@keyframes explode {
+  from {background-color: #333333;}
+  to {background-color: #FFFFFF;}
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: azure;
+
+  .hidden {
+    display: none
+  }
+
+  .square {
+    position: absolute;
+    background-color: #333333;
+  }
+
+  .explode {
+    opacity: 0.3;
+    animation-name: explode;
+    animation-duration: 500ms;
+  }
+}
+
