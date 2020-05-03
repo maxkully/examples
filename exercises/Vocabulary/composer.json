@@ -1,0 +1,20 @@
+{
+  "name": "wisebits/vocabulary",
+  "description": "Distributed vocabulary parser from texts",
+  "type": "library",
+  "license": "default",
+  "minimum-stability": "dev",
+  "require": {
+    "php": "~7.3",
+    "monolog/monolog": "^2.0@dev"
+  },
+  "require-dev": {
+    "clue/phar-composer": "dev-master",
+    "squizlabs/php_codesniffer": "^3.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "": "src/"
+    }
+  }
+}

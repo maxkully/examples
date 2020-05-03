@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: wb/test
+    ports:
+      - 80:3002
+    volumes:
+      - ./:/home/ws/app
