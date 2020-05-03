@@ -1,0 +1,22 @@
+.idea
+
+# Ignore configs
+apps/back/app/config/parameters.yml
+# Ignore composer generated files
+apps/back/vendor/
+apps/back/bin/
+# Ignore backend app generated files
+apps/back/web/bundles/
+apps/back/app/cache/*
+apps/back/app/logs/*
+
+# Ignore frontend dependencies
+apps/front/node_modules
+# Ignore build files
+apps/front/build
+
+# Ignore shared docker volumes
+var/
+
+# Ignore environment data
+.env

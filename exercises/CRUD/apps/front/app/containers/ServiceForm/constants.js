@@ -1,0 +1,11 @@
+export const LOAD_SERVICE_FORM = 'bdt/ServiceForm/LOAD_SERVICE_FORM';
+export const LOAD_SERVICE_FORM_SUCCESS = 'bdt/ServiceForm/LOAD_SERVICE_FORM_SUCCESS';
+export const SERVICE_FORM_ERROR = 'bdt/ServiceForm/SERVICE_FORM_ERROR';
+export const REMOVE_SERVICE = 'bdt/ServiceForm/REMOVE_SERVICE';
+export const ADD_SERVICE = 'bdt/ServiceForm/ADD_SERVICE';
+export const ADD_SERVICE_SUCCESS = 'bdt/ServiceForm/ADD_SERVICE_SUCCESS';
+export const UPDATE_SERVICE = 'bdt/ServiceForm/UPDATE_SERVICE';
+export const UPDATE_SERVICE_SUCCESS = 'bdt/ServiceForm/UPDATE_SERVICE_SUCCESS';
+export const CHANGE_TITLE = 'bdt/ServiceForm/CHANGE_TITLE';
+export const CHANGE_DESCRIPTION = 'bdt/ServiceForm/CHANGE_DESCRIPTION';
+export const RESET_SERVICE = 'bdt/ServiceForm/RESET_SERVICE';

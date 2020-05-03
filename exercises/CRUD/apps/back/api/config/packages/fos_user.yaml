@@ -1,0 +1,8 @@
+# config/packages/user.yaml
+fos_user:
+  db_driver: orm
+  firewall_name: main
+  user_class: BDT\Entity\User
+  from_email:
+    address: "support@bdt.com"
+    sender_name: "support@bdt.com"

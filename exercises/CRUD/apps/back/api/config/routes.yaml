@@ -1,0 +1,7 @@
+#index:
+#    path: /
+#    controller: BDT\Controller\DefaultController::index
+
+api_auth_login:
+  path: /api/auth/login
+  methods:  [POST]

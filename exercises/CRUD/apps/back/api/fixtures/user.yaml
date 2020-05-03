@@ -1,0 +1,6 @@
+BDT\Entity\User:
+  admin:
+    username: dummy_admin
+    email: dummy.admin@bdt.com
+    enabled: true
+    password: dummy_admin

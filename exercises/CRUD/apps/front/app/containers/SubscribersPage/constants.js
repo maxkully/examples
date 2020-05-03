@@ -1,0 +1,10 @@
+export const LOAD_SUBSCRIBERS = 'bdt/SubscribersPage/LOAD_SUBSCRIBERS';
+export const LOAD_SUBSCRIBERS_SUCCESS = 'bdt/SubscribersPage/LOAD_SUBSCRIBERS_SUCCESS';
+export const LOAD_SUBSCRIBERS_ERROR = 'bdt/SubscribersPage/LOAD_SUBSCRIBERS_ERROR';
+export const REMOVE_SUBSCRIBER = 'bdt/SubscribersPage/REMOVE_SUBSCRIBER';
+export const REMOVE_SUBSCRIBER_SUCCESS = 'bdt/SubscribersPage/REMOVE_SUBSCRIBER_SUCCESS';
+export const FILTER_BY_PHONE = 'bdt/SubscribersPage/FILTER_BY_PHONE';
+export const FILTER_BY_DATE_FROM = 'bdt/SubscribersPage/FILTER_BY_DATE_FROM';
+export const FILTER_BY_DATE_TO = 'bdt/SubscribersPage/FILTER_BY_DATE_TO';
+export const SORTING_BY = 'bdt/SubscribersPage/SORTING_BY';
+export const LOADING_MORE = 'bdt/SubscribersPage/LOADING_MORE';

@@ -1,0 +1,42 @@
+framework:
+    workflows:
+        subscriber:
+            type: 'state_machine'
+            marking_store:
+                type: 'method'
+                property: 'currentPlace'
+            supports:
+                - BDT\Entity\Subscriber
+            initial_marking: active
+            places:
+                - active
+                - suspended
+                - blocked
+            transitions:
+                suspend:
+                    from: active
+                    to: suspended
+                block:
+                    from: [active, suspended]
+                    to: blocked
+                reactivate:
+                    from: [blocked, suspended]
+                    to: active
+        service:
+            type: 'state_machine'
+            marking_store:
+                type: 'method'
+                property: 'currentPlace'
+            supports:
+                - BDT\Entity\MobileService
+            initial_marking: active
+            places:
+                - active
+                - disabled
+            transitions:
+                disable:
+                    from: active
+                    to: disabled
+                reactivate:
+                    from: disabled
+                    to: active

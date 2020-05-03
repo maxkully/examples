@@ -1,0 +1,4 @@
+BDT\Entity\MobileService:
+  services_dummy{1..1000}:
+    title: <sentence()>
+    description: <realText()>

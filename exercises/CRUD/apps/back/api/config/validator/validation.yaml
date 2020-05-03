@@ -1,0 +1,4 @@
+BDT\Entity\Subscriber:
+  properties:
+    locale:
+      - Choice: { callback: getLocales }

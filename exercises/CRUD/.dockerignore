@@ -1,0 +1,5 @@
+apps/front/node_modules/
+apps/front/build/
+apps/back/app/cache
+apps/back/app/logs
+var/mysql

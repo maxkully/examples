@@ -1,0 +1,5 @@
+BDT\Entity\Subscriber:
+  subscribers_dummy_{1..1000}:
+    phone: <ean13()>
+    locale: <supportedLanguages()>
+    created_at: <dateTimeThisYear()>
