@@ -1,4 +1,4 @@
-GrowFlow Code Exercise
+Timeline Code Exercise
 ======================
 
 ### Description
