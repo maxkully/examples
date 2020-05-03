@@ -1,0 +1,16 @@
+before_script:
+    - whoami
+    - composer --version
+    - composer install
+deploy_to_production:
+    stage: deploy
+    environment:
+        name: production
+        url: https://production.example.com
+    script:
+        - echo "Start deploy to production..."
+        - vendor/bin/phing -f phing.xml
+    when: on_success
+    only:
+        - master
+

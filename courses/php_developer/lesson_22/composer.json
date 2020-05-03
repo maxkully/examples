@@ -1,0 +1,21 @@
+{
+  "name": "otus_php/right_way",
+  "license": "proprietary",
+  "version": "1.0.0",
+  "require": {
+    "monolog/monolog": "^1.23",
+    "twig/twig": "1.*",
+    "predis/predis": "^1.1"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*",
+    "codeception/codeception": "^2.4",
+    "phing/phing": "^2.16",
+    "phpmd/phpmd": "^2.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "RightWay\\": "app/"
+    }
+  }
+}

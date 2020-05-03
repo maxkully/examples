@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+  default: ~
+
+services:
+  app:  
+    build: ./doc
+    volumes:
+      - ./app:/app
+    networks:
+      - default
+
+  mysql:
+    image: "mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    networks:
+      - default
