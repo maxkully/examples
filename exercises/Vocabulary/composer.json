@@ -10,7 +10,10 @@
   },
   "require-dev": {
     "clue/phar-composer": "dev-master",
-    "squizlabs/php_codesniffer": "^3.0@dev"
+    "phpbench/phpbench": "^0.14.0",
+    "phpmd/phpmd": "@stable",
+    "phpunit/phpunit": "^6.0",
+    "squizlabs/php_codesniffer": "^3.5.4"
   },
   "autoload": {
     "psr-4": {

@@ -3,6 +3,7 @@
 namespace CLI\Commands;
 
 use Monolog\Logger;
+use Vocabulary\Core\Interfaces\Storage;
 use Vocabulary\Core\Traits\Logging;
 use Vocabulary\Vocabulary;
 
@@ -20,7 +21,7 @@ class Load
      */
     private $source;
     /**
-     * @var mixed
+     * @var Storage
      * Provider of storage for vocabulary
      */
     private $storage;
@@ -49,9 +50,11 @@ class Load
 
         $storage = $options['storage'];
         $this->storage = new $storage['provider']($storage['options']);
+        if (isset($options['reset']) && $options['reset']) {
+            $this->storage->reset();
+        }
 
         $this->options = $options;
-
         $this->logger->debug('Command `Load` instantiated');
     }
 
@@ -67,8 +70,6 @@ class Load
         }
         $vocabulary = new Vocabulary($this->file, $this->source, $this->storage, $this->options['vocabulary']);
         $vocabulary->load();
-        $this->logger->debug('Ispum count => '. $vocabulary->count('ipsum'));
-        $this->logger->debug('Listing => '. print_r($vocabulary->listing('a2.wbv'), 1));
     }
 
     /**

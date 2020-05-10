@@ -21,7 +21,6 @@ class Vocabulary
      * @var Storage
      */
     private $storage;
-//    private $readers = [];
     /**
      * @var Logger
      */
@@ -54,15 +53,15 @@ class Vocabulary
     public function load(): void
     {
         $chunk = new Chunk($this->file, $this->source);
-
         $start = 0;
         $tail = '';
         while (!$chunk->lastChunk) {
             try {
                 $content = $chunk->getContent($start, $this->blockSize);
+
                 if (!$chunk->firstChunk) {
                     $head = array_shift($content);
-                    $this->storage->push($head . $tail);
+                    $this->storage->push($tail . $head);
                 }
 
                 if (!$chunk->lastChunk) {
@@ -72,6 +71,7 @@ class Vocabulary
                 foreach ($content as $word) {
                     $this->storage->push($word);
                 }
+
                 $start += $this->blockSize;
             } catch (\Exception $e) {
                 $this->logger->error($e->getMessage());

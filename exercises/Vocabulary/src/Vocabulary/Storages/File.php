@@ -3,6 +3,7 @@
 namespace Vocabulary\Storages;
 
 use Monolog\Logger;
+use Vocabulary\Core\Dispatcher;
 use Vocabulary\Core\Interfaces\Storage as StorageInterface;
 use Vocabulary\Core\Traits\Logging;
 
@@ -31,6 +32,8 @@ class File implements StorageInterface
      */
     private $logger;
 
+    private $dispatcher;
+
     /**
      * File constructor.
      * @param $options
@@ -40,6 +43,7 @@ class File implements StorageInterface
     {
         $this->logger = $this->loggerInit($options['logLevel']);
         $this->logger->debug('Storage `File` instantiated ');
+        $this->dispatcher = new Dispatcher($options);
 
         $this->dir = $options['dir'];
         $this->extension = $options['extension'];
@@ -75,10 +79,7 @@ class File implements StorageInterface
      */
     public function reset(): void
     {
-        /**
-         * @todo scandir
-         */
-        $files = [];
+        $files = glob($this->dir . '/*');
         foreach ($files as $file) {
             unlink($file);
         }
@@ -96,7 +97,7 @@ class File implements StorageInterface
             return 0;
         }
 
-        return (int) $content[$word];
+        return $content[$word] ?? 0;
     }
 
     /**
@@ -116,11 +117,9 @@ class File implements StorageInterface
      */
     private function dispatch($word): string
     {
-        $length = mb_strlen($word);
-        $char = mb_substr($word, 0, 1);
-
+        $address = $this->dispatcher->dispatch($word);
         // WiseBits Vocabulary (wbv)
-        return $char . $length . $this->extension;
+        return $address . $this->extension;
     }
 
     /**

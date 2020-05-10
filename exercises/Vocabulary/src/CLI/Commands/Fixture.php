@@ -41,7 +41,7 @@ class Fixture
     {
         $this->logger = $this->loggerInit($options['logLevel']);
         $this->iterations = (int)array_shift($inputs);
-        $this->dir = $options['storage']['options']['dir'];
+        $this->dir = $options['fixtures_dir'];
         if (!$this->dir) {
             throw new \Exception('Directory does not set up');
         }

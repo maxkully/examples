@@ -31,7 +31,7 @@ class Chunk
     public function __construct($file, $source)
     {
         // @todo place logLevel to ENV
-        $this->logger = $this->loggerInit('DEBUG');
+        $this->logger = $this->loggerInit('ERROR');
         $this->file = $file;
         $this->source = $source;
         $this->lastChunk = false;
@@ -49,6 +49,7 @@ class Chunk
     {
         try {
             $result = $this->source->read($start, $length);
+            $result = preg_replace("/[\n\t]/ui", ' ', $result);
             $result = mb_strtolower(preg_replace("/[^\p{Cyrillic}a-z0-9 ]/ui", '', $result));
 
             $this->firstChunk = $this->source->isBegin();

@@ -1,6 +1,8 @@
 Roadmap
 =======
 
+[Practical application for improving technical skills](https://gitlab.com/maxkully/awesome-fullstack)
+
 Ideas
 -----
 
@@ -10,12 +12,13 @@ Ideas
 - Add another blockchain project written by Node.js
 - Other things implements in stock exchange project
   - Implement UI by Angular & Vue too
-  - Use electron to desktop UI
+  - Use Electron to desktop UI
   - Use NativeScript to mobile UI
 
 Upcoming 
 --------
 
+- Found and attach projects from [Udemy](https://udemy.com) completed courses
 - Laravel usage
 - Ruby usage
 - Rails usage
@@ -27,8 +30,8 @@ Upcoming
 - Typescript usage
 - Vue.js usage
 
-My awesome full-stack
----------------------
+Awesome full-stack
+------------------
 [Source](https://gitlab.com/maxkully/awesome-fullstack)
 
 - HTML Best practice
