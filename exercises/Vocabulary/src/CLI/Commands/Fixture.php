@@ -11,6 +11,7 @@ use Vocabulary\Core\Traits\Logging;
 class Fixture
 {
     use Logging;
+
     /**
      * @var string
      * Directory for placing created file
@@ -41,12 +42,12 @@ class Fixture
     {
         $this->logger = $this->loggerInit($options['logLevel']);
         $this->iterations = (int)array_shift($inputs);
-        $this->dir = $options['storage']['options']['dir'];
+        $this->dir = $options['fixtures_dir'];
         if (!$this->dir) {
             throw new \Exception('Directory does not set up');
         }
         if (!is_dir($this->dir)) {
-            $this->logger->debug('Create directory '. $this->dir);
+            $this->logger->debug('Create directory ' . $this->dir);
             mkdir($this->dir, 0775, true);
         }
 

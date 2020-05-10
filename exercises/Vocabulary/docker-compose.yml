@@ -8,5 +8,6 @@ services:
     image: wb/test
     ports:
       - 80:3002
+#    user: "1000:1000"
     volumes:
       - ./:/home/ws/app

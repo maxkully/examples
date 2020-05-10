@@ -54,6 +54,9 @@ class CLI
         if (isset($arguments[2]) && $arguments[2]) {
             $this->inputs = array_slice($arguments, 2);
         }
+        if (isset($arguments[3]) && $arguments[3] === '--reset') {
+            $options['reset'] = true;
+        }
 
         $this->options = $options;
         $this->logger->info('CLI instantiated');

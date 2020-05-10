@@ -12,14 +12,14 @@ interface Storage
      * @param String $word
      * @return mixed
      */
-    public function push(String $word);
+    public function push(string $word);
 
     /**
      * Return number of word appearances in source
      * @param String $word
      * @return mixed
      */
-    public function count(String $word);
+    public function count(string $word);
 
     /**
      * Remove all words from vocabulary

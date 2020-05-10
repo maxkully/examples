@@ -43,7 +43,7 @@ class File implements SourceInterface
 
         $handle = fopen($this->file, "r");
         if (!$handle) {
-            throw new Exception("File not opened", 1);
+            throw new \Exception("File not opened", 1);
         }
         fseek($handle, $start);
         $result = fread($handle, $length);
